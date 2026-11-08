@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #N2{
+          border:4px outset grey;
+          width:220px;
+          border-radius:20px;
+        }
+        #field{
+          border:4px outset black;
+          padding-top:20px;
+          background-color:grey;
+          height:90%;
+        }
+        #field1{
+          border:4px outset black;
+          padding-top:20px;
+          border-radius:20px;
+        }
+        button{
+          border:5px outset grey;
+          border-radius:10px;
+          background-color:grey;
+          width:140px;
+          height:60px;
+          font-size:16;
+        }
+        button:hover{
+          border:5px groove black;
+          border-radius:10px;
+          background-color:black;
+          width:140px;
+          color:white;
+        }
+    
+/* सभी डिवाइस के लिए */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px;
+}
+
+/* Cards का layout */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+}
+
+    </style>
+    <title>index</title>
+  </head>
+<body>
+  <fieldset id="field">
+    <center>
+  <h2 id="N2">Nandan God World</h2>
+    </center>
+    <fieldset id="field1">
+      <center>
+      <a href="math.html">
+      <button>Maths Quiz</button>
+      </a>
+      <button>Maths PDF</button><br><br>
+      <a href="rea.html"><button>Reasoning Quiz</button></a>
+      <button>Reasoning PDF</button><br><br>
+      <a href="gk.html">
+      <button>Gk Gs Quiz</button>
+      </a>
+      <button>Gk Gs PDF</button><br><br>
+        <a href="physics.html">
+      <button>Science Quiz</button>
+        </a>
+      <button>Science PDF</button><br><br>
+        <a href="che.html">
+      <button>Social Science Quiz</button>
+        </a>
+      <button>Social Science PDF</button><br><br>
+      </center>
+    </fieldset>
+  
+  </fieldset>
+</body>
+
+</html>
